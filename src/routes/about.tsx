@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { CTA, PageHero, seo } from "@/components/site";
+import { Clients, CTA, PageHero, seo } from "@/components/site";
 
 export const Route = createFileRoute("/about")({
   head: () => seo("About Afristar Consulting | Your Partner for Growth", "Meet Afristar Consulting and founder Agok Wal — our mission, vision and core values for South Sudan's businesses."),
@@ -17,7 +17,7 @@ function About() {
   return (
     <>
       <PageHero eyebrow="About us" title="Your partner for growth in South Sudan.">
-        We don't just solve problems; we ignite potential. Whether you're a startup scaling new heights or a professional crafting your legacy, we're here to turn ambition into achievement.
+        We don't just solve problems; we ignite potential. Whether you're a startup scaling new heights or an institution building its people, we're here to turn ambition into achievement.
       </PageHero>
       <section className="mx-auto grid max-w-7xl gap-12 px-6 py-24 md:grid-cols-2">
         <div className="rounded-lg border bg-card p-10">
@@ -47,6 +47,7 @@ function About() {
           ))}
         </div>
       </section>
+      <Clients />
       <CTA />
     </>
   );

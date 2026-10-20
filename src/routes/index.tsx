@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { GraduationCap, Users, Calculator, Globe2, ArrowRight } from "lucide-react";
 import hero from "@/assets/hero.jpg";
-import { CTA, seo } from "@/components/site";
+import { CTA, Clients, seo } from "@/components/site";
 
 export const Route = createFileRoute("/")({
   head: () => seo("Afristar Consulting | HR, Training, Accounting & Recruitment in Juba", "Leadership, HR and governance training, full HR consultancy, accounting and bookkeeping, and local & international recruitment in South Sudan."),
@@ -66,6 +66,7 @@ function Index() {
           </div>
         </div>
       </section>
+      <Clients />
       <CTA />
     </>
   );

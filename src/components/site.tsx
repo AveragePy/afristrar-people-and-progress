@@ -92,6 +92,33 @@ export function CTA() {
   );
 }
 
+export const clients = [
+  { name: "National Communication Authority", work: "Organisational restructuring and staff realignment." },
+  { name: "South Sudan Revenue Authority", work: "HR audits with actionable recommendations." },
+  { name: "National Elections Commission", work: "" },
+  { name: "IGAD", work: "Civic education training for civil society, women, youth and persons with disabilities." },
+  { name: "UNMISS", work: "HR consultancy for the National Elections Commission — writing all HR policies, the HR manual and the employee handbook." },
+];
+
+export function Clients() {
+  return (
+    <section className="bg-navy text-navy-foreground">
+      <div className="mx-auto max-w-7xl px-6 py-24">
+        <p className="eyebrow !text-gold">Our clients</p>
+        <h2 className="mt-3 max-w-3xl text-4xl font-extrabold">Trusted by national institutions and regional bodies.</h2>
+        <div className="mt-12 grid gap-px overflow-hidden rounded-lg border border-navy-foreground/15 bg-navy-foreground/15 md:grid-cols-2 lg:grid-cols-3">
+          {clients.map((c) => (
+            <div key={c.name} className="flex flex-col bg-navy p-8">
+              <h3 className="font-display text-lg font-bold text-gold">{c.name}</h3>
+              {c.work ? <p className="mt-3 text-sm leading-relaxed text-navy-foreground/80">{c.work}</p> : null}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export function seo(title: string, description: string) {
   return {
     meta: [

@@ -13,14 +13,13 @@ const services = [
   { t: "Risk Management", d: "Identify risks before they escalate, with mitigation strategies tailored to the local landscape — from internal audits to crisis frameworks.", items: ["Internal audit", "Risk assessment", "Crisis management"] },
   { t: "Business Management Consulting", d: "Practical guidance to streamline operations, improve performance and grow sustainably.", items: ["Performance improvement", "Customised business solutions"] },
   { t: "Strategy & Organisational Development", d: "Develop and implement strategies, structures and cultures that deliver tangible outcomes.", items: ["Strategic planning", "Org design", "Change management"] },
-  { t: "Career Coaching (Individuals)", d: "Polished CVs, interview mastery and strategic career mapping to secure your next role.", items: ["CV writing", "Interview preparation", "Career mapping"] },
 ];
 
 function Services() {
   return (
     <>
       <PageHero eyebrow="Our services" title="Everything your organisation needs to grow.">
-        HR, finance, strategy and career coaching — tailored, never one-size-fits-all.
+        HR, finance, risk and strategy — tailored, never one-size-fits-all.
       </PageHero>
       <section className="mx-auto max-w-7xl px-6 py-24">
         <div className="grid gap-6 md:grid-cols-2">
