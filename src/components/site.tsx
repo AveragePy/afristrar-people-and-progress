@@ -95,7 +95,7 @@ export function CTA() {
 export const clients = [
   { name: "National Communication Authority", work: "Organisational restructuring and staff realignment." },
   { name: "South Sudan Revenue Authority", work: "HR audits with actionable recommendations." },
-  { name: "National Elections Commission", work: "HR consultancy for the Commission." },
+  { name: "National Elections Commission", work: "Recruitment processes for elections staff, including thousands of voter registration officers." },
   { name: "IGAD", work: "Civic education training for civil society, women, youth and persons with disabilities." },
   { name: "UNMISS", work: "HR consultancy for the National Elections Commission — writing all HR policies, the HR manual and the employee handbook." },
 ];
