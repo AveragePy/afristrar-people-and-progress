@@ -4,7 +4,7 @@ import img from "@/assets/recruitment.jpg";
 import { CTA, PageHero, seo } from "@/components/site";
 
 export const Route = createFileRoute("/recruitment")({
-  head: () => seo("Local & International Recruitment | Afristar Consulting", "End-to-end recruitment of local South Sudanese and international talent — from job posting to onboarding."),
+  head: () => seo("Local & International Recruitment | Afristar Consulting", "End-to-end recruitment of local South Sudanese and international talent — from job posting to onboarding, including large-scale elections and voter registration workforce hiring."),
   component: Recruitment,
 });
 
@@ -42,6 +42,13 @@ function Recruitment() {
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+      <section className="mx-auto max-w-7xl px-6 py-24">
+        <div className="rounded-lg border border-t-4 border-gold bg-card p-10">
+          <p className="eyebrow">Currently</p>
+          <h2 className="mt-3 text-3xl font-extrabold">Elections workforce recruitment</h2>
+          <p className="mt-4 max-w-3xl text-lg text-muted-foreground">We are writing recruitment processes for elections staff, including thousands of voter registration officers — documented steps and clear selection criteria for appointments made at scale.</p>
         </div>
       </section>
       <CTA />
